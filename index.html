@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 60%;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        .red { background: #ff1a4b; }
+        .purple { background: #a500ff; }
+        .gray { background: #dcdcdc; color: black; }
+        .image-card {
+            background: url('people_directory.jpg') center/cover;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card gray">David Santos<br><small>and Partners</small></div>
+        <div class="card purple">Brand & Marketing Central</div>
+        <div class="card gray">Events Calendar</div>
+        <div class="card red">KNOWLEDGE HUB</div>
+        <div class="card gray">Human Resources System</div>
+        <div class="card purple">Learning & Development Community</div>
+        <div class="card red">Global News</div>
+        <div class="card image-card">People Directory</div>
+    </div>
+</body>
+</html>
